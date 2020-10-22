@@ -1,0 +1,4 @@
+/* Remove Student Lab content */
+*[outputclass ~= "lab-activity"] {
+    display: none;
+}
