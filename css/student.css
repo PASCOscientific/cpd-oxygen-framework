@@ -1,0 +1,27 @@
+/* Remove Teacher Guide content */
+*[outputclass ~= "teacher-guide"] {
+    display: none;
+}
+
+/* Replace answer with blank space in table cells */
+*[class~="topic/entry"] *[outputclass~="answer"] {
+    font-size: 0px;
+}
+*[class~="topic/entry"] *[outputclass~="two-lines"] {
+    margin-bottom: 0.67in;
+}
+*[class~="topic/entry"] *[outputclass~="three-lines"] {
+    margin-bottom: 1.0in;
+}
+*[class~="topic/entry"] *[outputclass~="four-lines"] {
+    margin-bottom: 1.33in;
+}
+
+/* Replace answer with blank space for questions */
+*[outputclass~="questions"] *[outputclass~="answer"] {
+    font-size: 0px;
+    padding-bottom: 1in;
+}
+*[outputclass~="questions"] *[outputclass~="drawing"] {
+    padding-bottom: 2in;
+}

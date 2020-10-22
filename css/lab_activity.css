@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/****************************************************************/
+/*                      REMOVED CONTENT                         */
+/****************************************************************/
+
+/* Remove Cover Page and TOC */
+*[class ~= 'map/map'] > *[class ~= 'toc/toc'] {
+    display:none !important;
+}
+*[class ~= 'map/map'] > *[class ~= 'front-page/front-page']{
+    display:none !important;
+}
+
+/* Remove 'Chapter #' prefix from topic titles */
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"]:before {
+    display: none !important;
+}
+
+/* Remove 'on page ##' suffix from links */
+*[class ~= "topic/xref"][href]:after,
+*[class ~= "topic/link"][href]:after {
+    content: none !important;
+}
+
+/****************************************************************/
+/*                      DOCUMENT PROPERTIES                     */
+/****************************************************************/
+
+/* Set the variable 'doctitle' to map title */
+div[class ~= "front-page/front-page-title"] {
+    string-set: doctitle content();
+}
+
+@page {
+    size: US-letter;
+    padding: 0.5em 0in;
+    font: 300 10pt 'Roboto', sans-serif;
+    border-top: dotted 2.2px;
+    border-bottom: dotted 2.2px;
+}
+
+@page:first {
+    margin: 0.75in 0.75in 0.75in 1.25in;
+    @top-left {
+        content: "NAME                                                                                           PERIOD                            DATE";
+        white-space: pre;
+        vertical-align: bottom;
+        padding-bottom: 4pt;
+    }
+}
+@page:right {
+    margin: 0.75in 0.75in 0.75in 1.25in;
+    @top-right {
+        content: string(doctitle) " | Student Handout";
+        text-transform: uppercase;
+        vertical-align: bottom;
+        padding-bottom: 4pt;
+    }
+    @bottom-right {
+        content: "PASCO        " counter(page);
+        vertical-align: top;
+        padding-top: 4pt;
+        white-space: pre;
+    }
+}
+@page:left {
+    margin: 0.75in 1.25in 0.75in 0.75in;
+    @top-left {
+        content: string(doctitle) " | Student Handout";
+        text-transform: uppercase;
+        vertical-align: bottom;
+        padding-bottom: 4pt;
+    }
+    @bottom-left {
+        content: counter(page) "        PASCO";
+        vertical-align: top;
+        padding-top: 4pt;
+        white-space: pre;
+    }
+}
+
+/****************************************************************/
+/*                      TEXT STYLES                             */
+/****************************************************************/
+
+*{
+    margin-top: 0;
+    margin-bottom: 6pt;
+}
+
+*[class~='topic/title'] {
+    page-break-after: avoid;
+    margin-bottom: 6pt;
+}
+.topictitle1 {
+    font: 300 20pt 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.sectiontitle {
+    font: 500 13pt 'Roboto', sans-serif;
+}
+.part-title {
+    font: 500 italic 10pt 'Roboto', sans-serif;
+    page-break-after: avoid;
+}
+.figcap,
+.tablecap {
+    font: italic 9pt serif;
+    text-align: left;
+}
+
+*[class~='topic/p'] {
+    font-size: 10pt;
+}
+
+.section {
+    margin-top: 0pt;
+    margin-bottom: 15pt;
+}
+.sectiondiv {
+    margin-bottom: 12pt;
+}
+
+*[class~="topic/entry"], [class~="topic/stentry"] {
+	font-size: 9pt;
+}
+.li {
+    font-size: 10pt;
+}
+
+.materials li {
+    font-size: 9pt;
+    margin-bottom: 2pt;
+}
+
+*[class~="topic/xref"] {
+    text-decoration: none;
+    color: black;
+}
+
+/****************************************************************/
+/*                      LISTS                                   */
+/****************************************************************/
+
+.ul, .ol {
+    margin-left: 0.22in;
+}
+.li {
+    page-break-inside: avoid;
+}
+.materials .ul {
+    column-count: 2;
+}
+.ol .ol,
+.ol .ul,
+.ul .ol,
+.ul .ul {
+    margin-top: 6pt;
+}
+
+/****************************************************************/
+/*                      TABLES                                  */
+/****************************************************************/
+
+*[class~="topic/table"] {
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+*[class~="topic/entry"], [class~="topic/stentry"] {
+    border: 1px solid black;
+    text-align: center;
+    height: 0.33in;    
+}
+
+/* Unset vertical-align:top for this rule */
+.simpletable td:not([valign]), .table td:not([valign]) {
+    vertical-align: middle;
+}
+*[class~="topic/entry"] *[class~="topic/p"],
+*[class~="topic/stentry"] *[class~="topic/p"] {
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size: 9pt;
+}
+
+th[class~="topic/entry"], th[class~="topic/stentry"] {
+    background-color: #D9D9D9;
+    font-family: 'Roboto', sans-serif;
+}
+
+/****************************************************************/
+/*                      IMAGES AND FIGURES                      */
+/****************************************************************/
+
+*[class ~= "topic/image"] {
+        prince-image-resolution: auto;
+} 
+*[class~="topic/fig"] {
+    page-break-inside: avoid;
+}
+
+/* Center images in figures */
+*[class ~= "topic/fig"] *[class ~= "topic/image"]{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
