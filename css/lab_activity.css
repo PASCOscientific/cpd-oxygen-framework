@@ -56,6 +56,7 @@ div[class ~= "front-page/front-page-title"] {
         text-transform: uppercase;
         vertical-align: bottom;
         padding-bottom: 4pt;
+        white-space: pre;
     }
     @bottom-right {
         content: "PASCO        " counter(page);
@@ -71,6 +72,7 @@ div[class ~= "front-page/front-page-title"] {
         text-transform: uppercase;
         vertical-align: bottom;
         padding-bottom: 4pt;
+        white-space: pre;
     }
     @bottom-left {
         content: counter(page) "        PASCO";
@@ -209,9 +211,17 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
   margin-right: auto;
 }
 
+/****************************************************************/
+/*                      QUESTIONS AND ANSWERS                   */
+/****************************************************************/
 
+*[outputclass ~= 'questions'] *[outputclass ~= 'answer'] {
+    margin-top: 3pt;
+}
 
-
+*[outputclass ~= 'answer'] {
+    font: 300 9pt 'Roboto', sans-serif;
+}
 
 
 
