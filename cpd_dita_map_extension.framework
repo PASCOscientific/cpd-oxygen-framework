@@ -791,7 +791,31 @@
 													<String></String>
 												</field>
 												<field name="ditaParams">
-													<list/>
+													<list>
+														<ditaParameter>
+															<field name="name">
+																<String>dotx.file</String>
+															</field>
+															<field name="description">
+																<null/>
+															</field>
+															<field name="value">
+																<String>${frameworkDir}/transformations/Normal.docx</String>
+															</field>
+															<field name="defaultValue">
+																<null/>
+															</field>
+															<field name="type">
+																<Integer>2</Integer>
+															</field>
+															<field name="possibleValues">
+																<null/>
+															</field>
+															<field name="possibleValuesDescriptions">
+																<null/>
+															</field>
+														</ditaParameter>
+													</list>
 												</field>
 												<field name="jvmArgs">
 													<String>-Xmx384m</String>
