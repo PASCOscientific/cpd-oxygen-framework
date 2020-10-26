@@ -193,6 +193,18 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Reset the table numbering for each topic */
+.table--title-label {
+    display: none;
+}
+*[class ~= "topic/topic"] {
+  counter-reset: tablecounter;
+}
+.table--title:before {
+  content: "Table " counter(tablecounter) ". ";
+  counter-increment: tablecounter;
+}
+
 /****************************************************************/
 /*                      IMAGES AND FIGURES                      */
 /****************************************************************/
