@@ -25,3 +25,8 @@
 *[outputclass~="questions"] *[outputclass~="drawing"] {
     padding-bottom: 2in;
 }
+
+/* Hide images with answers */
+*[class~="topic/image"][outputclass ~= "answer"] {
+    display: none;
+}
