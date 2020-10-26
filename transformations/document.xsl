@@ -39,6 +39,7 @@
   <xsl:import href="plugin:com.elovirta.ooxml:docx/word/document.mathml-d.xsl"/>
   <xsl:import href="plugin:com.elovirta.ooxml:docx/word/document.mml.xsl"/>
   <xsl:import href="plugin:com.elovirta.ooxml:docx/word/document.root.xsl"/>
+  <xsl:import href="custom_docx.xsl"/>
 
   <xsl:output indent="no"/>
 
