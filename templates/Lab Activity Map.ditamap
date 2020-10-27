@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="map_${id}">
+    <title>${caret}</title>
+    <mapref href="warehouse-pasco/curriculum_warehouse.ditamap" format="ditamap"/>
+    <keydef keys="student-file" href="${ask('Select Student File', relative_url, @studentFile)}"/>
+    <topicref href="${answer(@studentFile)}"/>
+    <topicref href="${ask('Select Teacher File', relative_url)}"/>
+</map>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="lab_${id}" outputclass="lab-activity" xml:lang="en-us">
+    <title>${caret}</title>
+    <prolog>
+        <author translate="no" type="creator">${author.name}</author>
+    </prolog>
+    <body>
+        <section id="inquiry" outputclass="inquiry">
+            <p><?oxy-placeholder content="Enter the investigation question."?></p>
+        </section>
+        <section id="objectives" outputclass="objectives">
+            <title>Objectives</title>
+            <ul>
+                <li>
+                    <p><?oxy-placeholder content="Enter an objective."?></p>
+                </li>
+            </ul>
+        </section>
+        <section id="materials" outputclass="materials">
+            <title>Materials and Equipment</title>
+            <ul>
+                <li>
+                    <p>Data collection system</p>
+                </li>
+                <li>
+                    <p><?oxy-placeholder content="Items (3)"?></p>
+                </li>
+                <li>
+                    <p><?oxy-placeholder content="Amount of item needed, 250 mL"?></p>
+                </li>
+                <li>
+                    <p><?oxy-placeholder content="Capacity or size of items (3), 250-mL"?></p>
+                </li>
+            </ul>
+        </section>
+        <section id="safety" outputclass="safety">
+            <title>Safety</title><draft-comment>
+                <p>If no specific safety statements, change the current below statement to the other
+                    "Follow regular rules..." statement:</p></draft-comment>
+            <p conkeyref="phrases/safety-statement"/>
+            <ul>
+                <li>
+                    <p><?oxy-placeholder content="Enter a safety statement."?></p>
+                </li>
+            </ul>
+        </section>
+        <section id="procedure" outputclass="procedure">
+            <title>Procedure</title><draft-comment>If not multi-part just delete the below
+                subheads.</draft-comment>
+            <p outputclass="part-title"><?oxy-placeholder content="Part 1 – Title of Part 1"?></p>
+            <draft-comment>Use "image" for in-line graphics like a SPARKvue icon; use Figure for
+                instructional images that require the "Figure #" caption. Figures are auto-numbered
+                but need a title. Larger figures will generally be centered on their own line or if
+                smaller, can float:right. If you need to change image size, specify desired width
+                (in inches). Reusable SPARKvue icons are located in Software &gt; SPARKvue &gt;
+                images (and Capstone too).</draft-comment>
+            <ol>
+                <li>
+                    <p><?oxy-placeholder content="Part 1 step 1."?></p>
+                </li>
+            </ol>
+            <p outputclass="part-title"><?oxy-placeholder content="Part 2 – Title of Part 2"?></p>
+            
+            <ol>
+                <li>
+                    <p><?oxy-placeholder content="Part 2 step 1."?></p>
+                </li>
+            </ol>
+        </section>
+        <section id="data-collection" outputclass="data-collection">
+            <title>Data Collection</title>
+            <draft-comment>A graph should be inserted as a "Figure" so
+                you can add a title if desired. Insert a graph using the "Recycle" icon then select
+                Con/Keyref Content under Reuse. Make sure all tables have titles and ask Jonathan or
+                Barbara about "the bug" if you're trying to resize table columns and it isn't
+                working. Put answers in table cells by using insert &gt; paragraph and assigning the
+                outputclass: answer (in Attributes tab) so answers are
+                teacher-view-only.</draft-comment>
+            <fig>
+                <p outputclass="graph-figure">Graph 1: </p>
+                <image conkeyref="blank_graphs/fine"/>
+            </fig>
+            <table>
+                <title/>
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1"/>
+                    <colspec colname="c2" colnum="2"/>
+                    <colspec colname="c3" colnum="3"/>
+                    <thead>
+                        <row>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>
+                                <p outputclass="answer"><?oxy-placeholder content="Answer Data"?></p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="questions" outputclass="questions">
+            <title>Questions and Analysis</title>
+            <draft-comment>Copy the template &lt;li&gt; element
+                below for each question you want to create.</draft-comment>
+            <ol>
+                <li>
+                    <p><?oxy-placeholder content="Enter question."?></p>
+                    <p outputclass="answer"><?oxy-placeholder content="Enter answer."?></p>
+                </li>
+            </ol>
+        </section>
+    </body>
+</topic>

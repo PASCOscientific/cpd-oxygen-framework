@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="teacher_${id}" outputclass="teacher-guide" xml:lang="en-us">
+    <title>[REQUESTED_FILE_NAME_WITHOUT_EXTENSION]</title>
+    <prolog>
+        <author translate="no" type="creator">${author.name}</author>
+    </prolog>
+    <body>
+        <section id="procedural-overview" outputclass="procedural-overview">
+            <title>Procedural Overview</title>
+            <p><?oxy-placeholder content="Enter a short statement."?></p>
+        </section>
+        <section id="teacher-prep-time" outputclass="time-required">
+            <title>Time Requirement</title>
+            <dl>
+                <dlentry>
+                    <dt>Teacher Preparation Time</dt>
+                    <dd><?oxy-placeholder content="## min"?></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Student Procedure</dt>
+                    <dd><?oxy-placeholder content="## min"?></dd>
+                </dlentry>
+            </dl>
+        </section>
+        <section conkeyref="student-file/objectives"/>
+        <section conkeyref="student-file/materials"/>
+        <section id="teacher-tips" outputclass="teacher-tips">
+            <title>Teacher Tips</title>
+            <ul>
+                <li>
+                    <p>Follow federal, state, and local guidelines for waste disposal.</p>
+                </li>
+            </ul>
+        </section>
+        <section conkeyref="student-file/safety"/>
+        <section conkeyref="student-file/procedure"/>
+        <section conkeyref="student-file/data-collection"/>
+        <section conkeyref="student-file/questions"/>
+        <section id="extension" outputclass="extension">
+            <title>Extension</title>
+            <dl>
+                <dlentry>
+                    <dt><?oxy-placeholder content="Title of Extension"?></dt>
+                    <dd><?oxy-placeholder content="Short description."?></dd>
+                </dlentry>
+            </dl>
+        </section>
+        <section id="tech-support" outputclass="support">
+            <title>Technical Support</title>
+            <p>For assistance with PASCO products, contact PASCO at: </p>
+            <table conkeyref="tech_support/tech-support-contact">
+                <tgroup cols="1">
+                    <tbody>
+                        <row>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </body>
+</topic>
