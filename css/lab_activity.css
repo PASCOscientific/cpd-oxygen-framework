@@ -197,7 +197,7 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 .table--title-label {
     display: none;
 }
-*[class ~= "topic/topic"] {
+*[class ~= "topic/body"] {
   counter-reset: tablecounter;
 }
 .table--title:before {
