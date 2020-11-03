@@ -170,6 +170,7 @@ div[class ~= "front-page/front-page-title"] {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    page-break-inside: avoid;
 }
 *[class~="topic/entry"], [class~="topic/stentry"] {
     border: 1px solid black;
@@ -221,6 +222,10 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
   display:block;
   margin-left: auto;
   margin-right: auto;
+}
+*[class ~= "equation-d/equation-block"] math {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /****************************************************************/
