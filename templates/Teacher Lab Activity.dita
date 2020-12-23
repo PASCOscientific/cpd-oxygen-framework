@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="teacher_${id}" outputclass="teacher-guide" xml:lang="en-us">
-    <title>[REQUESTED_FILE_NAME_WITHOUT_EXTENSION]</title>
+    <title>${caret}</title>
     <prolog>
         <author translate="no" type="creator">${author.name}</author>
     </prolog>
@@ -11,10 +11,10 @@
             <p><?oxy-placeholder content="Enter a short statement."?></p>
         </section>
         <section id="teacher-prep-time" outputclass="time-required">
-            <title>Time Requirement</title>
+            <title>Time Requirements</title>
             <dl>
                 <dlentry>
-                    <dt>Teacher Preparation Time</dt>
+                    <dt>Teacher Preparation</dt>
                     <dd><?oxy-placeholder content="## min"?></dd>
                 </dlentry>
                 <dlentry>
@@ -29,7 +29,7 @@
             <title>Teacher Tips</title>
             <ul>
                 <li>
-                    <p>Follow federal, state, and local guidelines for waste disposal.</p>
+                    Follow federal, state, and local guidelines for waste disposal.
                 </li>
             </ul>
         </section>
