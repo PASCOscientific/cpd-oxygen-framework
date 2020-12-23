@@ -23,6 +23,11 @@
     content: none !important;
 }
 
+/* Remove second <br> when two are present (temporary fix) */
+br:nth-of-type(2n) {
+    display: none;
+}
+
 /****************************************************************/
 /*                      DOCUMENT PROPERTIES                     */
 /****************************************************************/
@@ -211,7 +216,9 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 /****************************************************************/
 
 *[class ~= "topic/image"] {
-        prince-image-resolution: auto;
+    prince-image-resolution: auto;
+    height: 1.5em;
+    vertical-align: middle
 } 
 *[class~="topic/fig"] {
     page-break-inside: avoid;
@@ -222,6 +229,7 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
   display:block;
   margin-left: auto;
   margin-right: auto;
+  height: initial;
 }
 *[class ~= "equation-d/equation-block"] math {
     margin-left: auto;
