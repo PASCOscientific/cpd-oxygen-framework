@@ -47,3 +47,51 @@
     font-size: 10pt;
     margin-left: 0pt;
 }
+
+/* Support Section */
+*[outputclass ~= 'support'] {
+    break-inside: avoid;
+}
+*[outputclass ~= 'support'] [class~="topic/table"] {
+    width: auto;
+    margin-left: 0;
+}
+*[outputclass ~= 'support'] *[class ~= 'topic/entry'] {
+    border: none;
+    padding: 0.3em;
+    text-align: left;
+    font: 300 10pt serif;
+}
+.table td:not([valign]) {
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
