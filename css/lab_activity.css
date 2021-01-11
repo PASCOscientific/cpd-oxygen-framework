@@ -23,6 +23,11 @@
     content: none !important;
 }
 
+/* Remove second <br> when two are present (temporary fix) */
+br:nth-of-type(2n) {
+    display: none;
+}
+
 /****************************************************************/
 /*                      DOCUMENT PROPERTIES                     */
 /****************************************************************/
@@ -141,6 +146,12 @@ div[class ~= "front-page/front-page-title"] {
     color: black;
 }
 
+sup {
+    font-size: 0.6em;
+    top: -0.5em;
+    bottom: 0.33em;
+}
+
 /****************************************************************/
 /*                      LISTS                                   */
 /****************************************************************/
@@ -161,16 +172,34 @@ div[class ~= "front-page/front-page-title"] {
     margin-top: 6pt;
 }
 
+/* Left-align numbers in ordered lists */
+ol {
+  counter-reset: item;
+}
+ol li {
+  display: block;
+}
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  position: absolute;
+  margin-left: -1.5em;
+}
+ol ol li:before {
+  content: counter(item, lower-alpha) ". ";
+}
+
 /****************************************************************/
 /*                      TABLES                                  */
 /****************************************************************/
 
 *[class~="topic/table"] {
-    width: 100%;
+    
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     page-break-inside: avoid;
+    hyphens: none;
 }
 *[class~="topic/entry"], [class~="topic/stentry"] {
     border: 1px solid black;
@@ -211,21 +240,40 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 /****************************************************************/
 
 *[class ~= "topic/image"] {
-        prince-image-resolution: auto;
+    prince-image-resolution: auto;
+    height: 1.5em;
+    vertical-align: middle
 } 
 *[class~="topic/fig"] {
     page-break-inside: avoid;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Center images in figures */
 *[class ~= "topic/fig"] *[class ~= "topic/image"]{
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  
+  height: initial;
 }
+[class ~= "topic/fig"][outputclass ~= "float-right"] {
+    float: right;
+    margin: 0.25in;
+    margin-right: 0in;
+}
+
 *[class ~= "equation-d/equation-block"] math {
     margin-left: auto;
     margin-right: auto;
+}
+
+*[class ~="equation-d/equation-block"],
+*[class ~="equation-d/equation-inline"]{
+	font-family: serif !important;
+	font-size: 10pt;
 }
 
 /****************************************************************/
