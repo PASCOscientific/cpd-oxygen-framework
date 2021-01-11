@@ -3,7 +3,6 @@
 <map id="map_${id}">
     <title>${caret}</title>
     <mapref href="warehouse-pasco/curriculum_warehouse.ditamap" format="ditamap"/>
-    <keydef keys="student-file" href="${ask('Select Student File', relative_url, @studentFile)}"/>
-    <topicref href="${answer(@studentFile)}"/>
+    <topicref keys="student-file" href="${ask('Select Student File', relative_url, @studentFile)}"/>
     <topicref href="${ask('Select Teacher File', relative_url)}"/>
 </map>
