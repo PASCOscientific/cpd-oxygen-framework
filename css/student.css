@@ -35,3 +35,8 @@
 *[class~="topic/entry"] *[outputclass~="four-lines"] {
     margin-bottom: 1.33in;
 }
+
+/* Hide teacher notes */
+*[outputclass ~= "teacher-note"] {
+    display: none;
+}

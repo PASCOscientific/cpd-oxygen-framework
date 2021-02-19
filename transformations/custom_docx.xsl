@@ -29,6 +29,9 @@
     <!-- Do not display teacher guide topic -->
     <xsl:template match="//topic[@outputclass='teacher-guide']"/>
     
+    <!-- Do not display teacher notes -->
+    <xsl:template match="//*[@outputclass='teacher-note']"/>
+    
     <!-- Do not display draft-comment. This needs to be fixed using args.draft = no in the future. -->
     <xsl:template match="*[contains(@class, ' topic/draft-comment ')]" priority="10"/>
     
