@@ -260,9 +260,7 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 /* Center images in figures */
 *[class ~= "topic/fig"] *[class ~= "topic/image"]{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
+  margin: 0.25in auto;
   height: initial;
 }
 [class ~= "topic/fig"][outputclass ~= "float-right"] {
