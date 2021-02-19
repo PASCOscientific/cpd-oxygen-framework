@@ -6,10 +6,10 @@
 /* Replace answer with blank space for questions */
 *[outputclass~="questions"] *[outputclass~="answer"] {
     font-size: 0px;
-    margin-bottom: 1in;
+    padding-bottom: 1in;
 }
 *[outputclass~="questions"] *[outputclass~="drawing"] {
-    margin-bottom: 2in;
+    padding-bottom: 2in;
 }
 
 /* Hide images with answers */
@@ -24,16 +24,16 @@
 /* Replace answer with blank space in table cells */
 *[class~="topic/entry"] *[outputclass~="answer"] {
     font-size: 0px;
-    margin-bottom: 0in;
+    padding-bottom: 0in;
 }
 *[class~="topic/entry"] *[outputclass~="two-lines"] {
-    margin-bottom: 0.67in;
+    padding-bottom: 0.67in;
 }
 *[class~="topic/entry"] *[outputclass~="three-lines"] {
-    margin-bottom: 1.0in;
+    padding-bottom: 1.0in;
 }
 *[class~="topic/entry"] *[outputclass~="four-lines"] {
-    margin-bottom: 1.33in;
+    padding-bottom: 1.33in;
 }
 
 /* Hide teacher notes */
