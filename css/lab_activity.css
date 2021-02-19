@@ -87,6 +87,12 @@ div[class ~= "front-page/front-page-title"] {
     }
 }
 
+/* Page Break Rules */
+.objectives,
+.materials {
+    page-break-inside: avoid;
+}
+
 /****************************************************************/
 /*                      TEXT STYLES                             */
 /****************************************************************/
