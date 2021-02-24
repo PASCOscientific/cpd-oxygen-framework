@@ -202,7 +202,7 @@ ol ol li:before {
 *[class~="topic/table"] {
     
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     page-break-inside: avoid;
     hyphens: none;
@@ -249,12 +249,20 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
     prince-image-resolution: auto;
     height: 1.5em;
     vertical-align: middle
-} 
+}
+
+/* Center-align figures */
 *[class~="topic/fig"] {
     page-break-inside: avoid;
     display: table;
     margin-left: auto;
     margin-right: auto;
+}
+/* Left-align figures with graphs */
+.graph-figure {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 /* Center images in figures */
