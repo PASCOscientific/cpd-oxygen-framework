@@ -25,6 +25,10 @@
       <parameter name="args.figurelink.style" value="NUMBER"/>
       <parameter name="args.tablelink.style" value="NUMBER"/>
     </parameters>
+    <xslt>
+      <extension file="../xslt/teacher.xsl" id="com.oxygenxml.pdf.css.xsl.merged2merged"/>
+    </xslt>
   </pdf>
+  
   
 </publishing-template>
