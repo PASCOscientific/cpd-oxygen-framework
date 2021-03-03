@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Descriptor for the Publishing Template. 
+    
+    Defines all the resources included in a template 
+    (such as HTML page templates, CSS, JS, fonts, and transformation parameters).
+-->
+<publishing-template>
+  
+  <!-- 
+    This information is displayed as the name of the template 
+    in the transformation scenario dialog box.  
+  -->
+  <name>Student Lab PDF</name>
+   
+  <pdf>
+    <preview-image file="student_lab.png"/>
+    <resources>
+      <css file="../css/New_lab_activity.css"/>
+      <css file="../css/New_student.css"/>
+    </resources>
+    <parameters>
+      <parameter name="css.processor.type" value="prince"/>
+    </parameters>
+  </pdf>
+  
+</publishing-template>
