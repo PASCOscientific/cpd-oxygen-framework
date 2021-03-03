@@ -21,6 +21,9 @@
     </resources>
     <parameters>
       <parameter name="css.processor.type" value="prince"/>
+      <parameter name="figure.title.placement" value="bottom"/>
+      <parameter name="args.figurelink.style" value="NUMBER"/>
+      <parameter name="args.tablelink.style" value="NUMBER"/>
     </parameters>
     <xslt>
       <extension file="../xslt/student.xsl" id="com.oxygenxml.pdf.css.xsl.merged2merged"/>
