@@ -88,8 +88,8 @@ div[class ~= "front-page/front-page-title"] {
 }
 
 /* Page Break Rules */
-.objectives,
-.materials {
+[oid="objectives"],
+[oid="materials"] {
     page-break-inside: avoid;
 }
 
@@ -110,10 +110,10 @@ div[class ~= "front-page/front-page-title"] {
     font: 300 20pt 'Roboto', sans-serif;
     text-transform: uppercase;
 }
-.sectiontitle {
+.topictitle2 {
     font: 500 13pt 'Roboto', sans-serif;
 }
-.part-title {
+.topictitle3 {
     font: 500 italic 10pt 'Roboto', sans-serif;
     page-break-after: avoid;
 }
@@ -142,7 +142,7 @@ div[class ~= "front-page/front-page-title"] {
     font-size: 10pt;
 }
 
-.materials li {
+[oid="materials"] li {
     font-size: 9pt;
     margin-bottom: 2pt;
 }
@@ -168,7 +168,7 @@ sup {
 .li {
     page-break-inside: avoid;
 }
-.materials .ul {
+[oid="materials"] .ul {
     column-count: 2;
 }
 .ol .ol,
@@ -292,11 +292,11 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 /*                      QUESTIONS AND ANSWERS                   */
 /****************************************************************/
 
-*[outputclass ~= 'questions'] *[outputclass ~= 'answer'] {
+*[class ~= 'learning2-d/lcOpenAnswer2'] {
     margin-top: 3pt;
 }
 
-*[outputclass ~= 'answer'] {
+*[class ~= 'learning2-d/lcOpenAnswer2'] {
     font: 300 9pt 'Roboto', sans-serif;
 }
 
