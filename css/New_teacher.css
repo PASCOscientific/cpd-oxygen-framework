@@ -31,32 +31,32 @@
 }
 
 /* Time Required Section */
-*[outputclass ~= 'time-required'] *[class ~= 'dt'] {
+*[oid ~= 'time-requirements'] *[class ~= 'dt'] {
     float: left;
 }
-*[outputclass ~= 'time-required'] *[class ~= 'dt']:after {
+*[oid ~= 'time-requirements'] *[class ~= 'dt']:after {
     content: ": ";
     white-space: pre;
 }
 
 /* Extension Section */
-*[outputclass ~= 'extension'] *[class ~= 'topic/dt'] {
+*[oid ~= 'extension'] *[class ~= 'topic/dt'] {
     font: 500 italic 10pt 'Roboto', sans-serif;
 }
-*[outputclass ~= 'extension'] *[class ~= 'topic/dd'] {
+*[oid ~= 'extension'] *[class ~= 'topic/dd'] {
     font-size: 10pt;
     margin-left: 0pt;
 }
 
 /* Support Section */
-*[outputclass ~= 'support'] {
+*[oid ~= 'technical-support'] {
     break-inside: avoid;
 }
-*[outputclass ~= 'support'] [class~="topic/table"] {
+*[oid ~= 'technical-support'] [class~="topic/table"] {
     width: auto;
     margin-left: 0;
 }
-*[outputclass ~= 'support'] *[class ~= 'topic/entry'] {
+*[oid ~= 'technical-support'] *[class ~= 'topic/entry'] {
     border: none;
     padding: 0.3em;
     text-align: left;
