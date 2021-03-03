@@ -3,40 +3,7 @@
     display: none;
 }
 
-/* Replace answer with blank space for questions */
-*[outputclass~="questions"] *[outputclass~="answer"] {
-    font-size: 0px;
+/* Add answer space below open questions in a numbered list */
+[class~="topic/li"] [class~="learning2-d/lcOpenQuestion2"] [class~="learning2-d/lcQuestion2"] {
     padding-bottom: 1in;
-}
-*[outputclass~="questions"] *[outputclass~="drawing"] {
-    padding-bottom: 2in;
-}
-
-/* Hide images with answers */
-*[class~="topic/image"][outputclass ~= "answer"] {
-    display: none;
-}
-
-*[class ~="equation-d/equation-block"][outputclass~="answer"] {
-    display: none;
-}
-
-/* Replace answer with blank space in table cells */
-*[class~="topic/entry"] *[outputclass~="answer"] {
-    font-size: 0px;
-    padding-bottom: 0in;
-}
-*[class~="topic/entry"] *[outputclass~="two-lines"] {
-    padding-bottom: 0.67in;
-}
-*[class~="topic/entry"] *[outputclass~="three-lines"] {
-    padding-bottom: 1.0in;
-}
-*[class~="topic/entry"] *[outputclass~="four-lines"] {
-    padding-bottom: 1.33in;
-}
-
-/* Hide teacher notes */
-*[outputclass ~= "teacher-note"] {
-    display: none;
 }

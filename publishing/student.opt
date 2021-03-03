@@ -22,6 +22,9 @@
     <parameters>
       <parameter name="css.processor.type" value="prince"/>
     </parameters>
+    <xslt>
+      <extension file="../xslt/student.xsl" id="com.oxygenxml.pdf.css.xsl.merged2merged"/>
+    </xslt>
   </pdf>
   
 </publishing-template>
