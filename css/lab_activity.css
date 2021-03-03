@@ -200,7 +200,7 @@ ol ol li:before {
 /****************************************************************/
 
 *[class~="topic/table"] {
-    
+    border-collapse: collapse;
     margin-top: 0;
     margin-left: 0;
     margin-right: auto;
