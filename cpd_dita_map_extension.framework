@@ -987,10 +987,10 @@
 													<String>${cfd}</String>
 												</field>
 												<field name="outputDir">
-													<String>${cfd}/out/pdf-css-html5</String>
+													<String>${cfd}/out/pdf-student</String>
 												</field>
 												<field name="tempDir">
-													<String>${cfd}/temp/pdf-css-html5</String>
+													<String>${cfd}/temp/pdf-student</String>
 												</field>
 												<field name="transtype">
 													<String>pdf-css-html5</String>
@@ -1184,10 +1184,10 @@
 													<String>${cfd}</String>
 												</field>
 												<field name="outputDir">
-													<String>${cfd}/out/pdf-css-html5</String>
+													<String>${cfd}/out/pdf-teacher</String>
 												</field>
 												<field name="tempDir">
-													<String>${cfd}/temp/pdf-css-html5</String>
+													<String>${cfd}/temp/pdf-teacher</String>
 												</field>
 												<field name="transtype">
 													<String>pdf-css-html5</String>
