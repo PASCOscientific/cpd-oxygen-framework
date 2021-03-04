@@ -29,11 +29,29 @@
     <!-- Do not display teacher guide topic -->
     <xsl:template match="//topic[@outputclass='teacher-guide']"/>
     
+    <!-- Do not display lcOpenAnswer2 in Data Collection section -->
+    <xsl:template match="*[@oid='data-collection']//*[contains(@class, ' learning2-d/lcOpenAnswer2 ')]"/>
+   
+    <!-- Replace lcOpenAnswer2 in Questions section with Answer Space -->
+    <xsl:template match="*[@oid='questions']//*[contains(@class, ' learning2-d/lcOpenAnswer2 ')]">
+        <w:p>
+            <w:pPr>
+                <w:pStyle w:val="AnswerSpace3Lines"/>
+            </w:pPr>
+        </w:p>
+    </xsl:template>
+
+    <!-- Do not display draft-comment. This needs to be fixed using args.draft = no in the future. -->
+    <xsl:template match="*[contains(@class, ' topic/draft-comment ')]" priority="10"/>
+    
+    <!-- ******************************************************************************************** -->
+    <!--                              STYLES FROM ORIGINAL STUDENT LAB TOPIC                          -->
+    <!-- ******************************************************************************************** -->
+
     <!-- Do not display teacher notes -->
     <xsl:template match="//*[@outputclass='teacher-note']"/>
     
-    <!-- Do not display draft-comment. This needs to be fixed using args.draft = no in the future. -->
-    <xsl:template match="*[contains(@class, ' topic/draft-comment ')]" priority="10"/>
+
     
     <!-- Use "Section Head" style for Section Titles -->
     <xsl:template match="*[contains(@class, ' topic/section ')]/*[contains(@class, ' topic/title ')] |
