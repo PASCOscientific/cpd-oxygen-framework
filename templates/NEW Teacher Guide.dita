@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//PASCO//DTD DITA Learning Topic//EN" "lc-topic.dtd">
+<topic id="teacher_${id}" outputclass="teacher-guide" xml:lang="en-us">
+    <title>${caret}</title>
+    <titlealts>
+        <navtitle>Teacher Version</navtitle>
+    </titlealts>
+    <prolog>
+        <author translate="no" type="creator">${author.name}</author>
+    </prolog>
+    <body/>
+    <topic id="procedural-overview">
+        <title>Procedural Overview</title>
+        <body>
+            <p><?oxy-placeholder content="Enter a short statement..."?></p>
+        </body>
+    </topic>
+    <topic id="time-requirements">
+        <title>Time Requirements</title>
+        <body>
+            <dl>
+                <dlentry>
+                    <dt>Teacher Preparation</dt>
+                    <dd><?oxy-placeholder content="Enter number of minutes..."?></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Student Procedure</dt>
+                    <dd><?oxy-placeholder content="Enter number of minutes..."?></dd>
+                </dlentry>
+            </dl>
+        </body>
+    </topic>
+    <topic id="objectives" conref="${ask('Select Student File', relative_url, @studentFile)}#objectives">
+        <title/>
+    </topic>
+    <topic id="materials" conref="${answer(@studentFile)}#materials">
+        <title/>
+    </topic>
+    <topic id="teacher-tips">
+        <title>Teacher Tips</title>
+        <body>
+            <ul>
+                <li><?oxy-placeholder content="Enter a tip..."?></li>
+            </ul>
+        </body>
+    </topic>
+    <topic id="safety" conref="${answer(@studentFile)}#safety">
+        <title/>
+    </topic>
+    <topic id="data-collection" conref="${answer(@studentFile)}#data-collection">
+        <title/>
+    </topic>
+    <topic id="questions" conref="${answer(@studentFile)}#questions">
+        <title/>
+    </topic>
+    <topic id="extension">
+        <title>Extension</title>
+        <body>
+            <dl>
+                <dlentry>
+                    <dt><?oxy-placeholder content="Enter the title of extension..."?></dt>
+                    <dd><?oxy-placeholder content="Enter a short description..."?></dd>
+                </dlentry>
+            </dl>
+        </body>
+    </topic>
+    <topic id="technical-support" conref="../warehouse-pasco/resources/technical_support_contact.dita">
+        <title/>
+    </topic>
+</topic>
