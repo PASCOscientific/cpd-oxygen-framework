@@ -8,6 +8,26 @@
     display: none;
 }
 
+/* Remove all list items in Procedure except ones containing questions */
+*[oid ~= 'procedure'] [class~="topic/li"] {
+    font-size: 0pt;
+    margin-bottom: 0;
+}
+*[oid ~= 'procedure'] [class~="topic/li"] * {
+    display: none;
+}
+*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) {
+    font-size: 10pt;
+    margin-bottom: initial;
+}
+*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) * {
+   display: inline-block;
+}
+*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) div,
+*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure {
+   display: block;
+}
+
 @page:first {
     @top-left {
         content: "";
