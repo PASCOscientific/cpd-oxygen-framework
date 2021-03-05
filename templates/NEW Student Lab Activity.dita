@@ -52,6 +52,7 @@
             </draft-comment>
             <ol>
                 <li><?oxy-placeholder content="Enter step 1..."?></li>
+                <li><?oxy-placeholder content="Enter step 2..."?></li>
             </ol>
         </body>
         <topic id="part-1">
@@ -70,8 +71,9 @@
                 the paragraph element, not the title element. Insert a graph using the DITA Reusable
                 Components panel. Make sure all tables have titles.</draft-comment>
             <fig>
-                <p>Graph 1: </p>
-                <image conkeyref="blank_graphs/fine"/>
+                <p>Graph 1:</p>
+                <image conkeyref="blank_graphs/fine" props="student"/>
+                <image conkeyref="blank_graphs/fine" props="teacher"/>
             </fig>
             <table>
                 <title/>
@@ -81,15 +83,15 @@
                     <colspec colname="c3" colnum="3"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry><?oxy-placeholder content="Enter a heading..."?></entry>
                             <entry/>
                             <entry/>
                         </row>
                     </thead>
                     <tbody>
                         <row>
-                            <entry/>                            
-                            <entry/>
+                            <entry><?oxy-placeholder content="Enter student visible content..."?></entry>                            
+                            <entry><ph props="teacher"><?oxy-placeholder content="Enter teacher-only visible content..."?></ph></entry>
                             <entry/>
                         </row>
                         <row>
