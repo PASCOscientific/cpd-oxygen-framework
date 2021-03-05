@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//PASCO//DTD DITA Learning Topic//EN" "lc-topic.dtd">
+<topic id="lab_${id}" outputclass="lab-activity" xml:lang="en-us">
+    <title>${caret}</title>
+    <titlealts>
+        <navtitle>Student Version</navtitle>
+    </titlealts>
+    <prolog>
+        <author translate="no" type="creator">${author.name}</author>
+    </prolog>
+    <body>
+        <p><?oxy-placeholder content="Enter the investigation question..."?></p>
+    </body>
+    <topic id="objectives">
+        <title>Objectives</title>
+        <body>
+            <ul>
+                <li><?oxy-placeholder content="Enter an objective..."?></li>
+            </ul>
+        </body>
+    </topic>
+    <topic id="materials">
+        <title>Materials and Equipment</title>
+        <body>
+            <ul>
+                <li><?oxy-placeholder content="Data collection system"?></li>
+                <li><?oxy-placeholder content="Items (3)"?></li>
+                <li><?oxy-placeholder content="Amount of item needed, 250 mL"?></li>
+                <li><?oxy-placeholder content="Capacity or size of items (3), 250-mL"?></li>
+            </ul>
+        </body>
+    </topic>
+    <topic id="safety">
+        <title>Safety</title>
+        <body>
+            <draft-comment>
+                <p>Delete the elements that are not needed.</p>
+            </draft-comment>
+            <p conkeyref="phrases/safety-statement"/>
+            <ul>
+                <li><?oxy-placeholder content="Enter a safety statement..."?></li>
+            </ul>
+            <p conkeyref="phrases/safety-statement-gen"/>
+        </body>
+    </topic>
+    <topic id="procedure">
+        <title>Procedure</title>
+        <body>
+            <draft-comment>
+                <p>If the procedure has multiple parts, nest a new topic in the Procedure topic for
+                    each part.</p>
+            </draft-comment>
+            <ol>
+                <li><?oxy-placeholder content="Enter step 1..."?></li>
+                <li><?oxy-placeholder content="Enter step 2..."?></li>
+            </ol>
+        </body>
+        <topic id="part-1">
+            <title><?oxy-placeholder content="Enter title for part 1..."?></title>
+            <body>
+                <ol>
+                    <li><?oxy-placeholder content="Enter step 1..."?></li>
+                </ol>
+            </body>
+        </topic>
+    </topic>
+    <topic id="data-collection">
+        <title>Data Collection</title>
+        <body>
+            <draft-comment>A graph should be inserted as a "Figure". To give the graph a title, use
+                the paragraph element, not the title element. Insert a graph using the DITA Reusable
+                Components panel. Make sure all tables have titles.</draft-comment>
+            <fig>
+                <p>Graph 1:</p>
+                <image conkeyref="blank_graphs/fine" props="student"/>
+                <image conkeyref="blank_graphs/fine" props="teacher"/>
+            </fig>
+            <table>
+                <title/>
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1"/>
+                    <colspec colname="c2" colnum="2"/>
+                    <colspec colname="c3" colnum="3"/>
+                    <thead>
+                        <row>
+                            <entry><?oxy-placeholder content="Enter a heading..."?></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><?oxy-placeholder content="Enter student visible content..."?></entry>                            
+                            <entry><ph props="teacher"><?oxy-placeholder content="Enter teacher-only visible content..."?></ph></entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </body>
+    </topic>
+    <topic id="questions">
+        <title>Questions and Analysis</title>
+        <body>
+            <ol>
+                <li>
+                    <lcOpenQuestion2>
+                        <lcQuestion2><?oxy-placeholder content="Enter a question..."?></lcQuestion2>
+                        <lcOpenAnswer2><?oxy-placeholder content="Enter an answer..."?></lcOpenAnswer2>
+                    </lcOpenQuestion2>
+                </li>
+            </ol>
+        </body>
+    </topic>
+</topic>
