@@ -29,8 +29,8 @@
     <!-- Do not display teacher guide topic -->
     <xsl:template match="//topic[@outputclass='teacher-guide']"/>
     
-    <!-- Do not display lcOpenAnswer2 in Data Collection section -->
-    <xsl:template match="*[@oid='data-collection']//*[contains(@class, ' learning2-d/lcOpenAnswer2 ')]"/>
+    <!-- Remove elements with @props = 'teacher' -->
+    <xsl:template match="*[contains(@props, 'teacher')]"/>
    
     <!-- Replace lcOpenAnswer2 in Questions section with Answer Space -->
     <xsl:template match="*[@oid='questions']//*[contains(@class, ' learning2-d/lcOpenAnswer2 ')]">
