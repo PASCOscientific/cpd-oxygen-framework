@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Descriptor for the Publishing Template. 
+    
+    Defines all the resources included in a template 
+    (such as HTML page templates, CSS, JS, fonts, and transformation parameters).
+-->
+<publishing-template>
+  
+  <!-- 
+    This information is displayed as the name of the template 
+    in the transformation scenario dialog box.  
+  -->
+  <name>Student Lab PDF</name>
+   
+  <pdf>
+    <preview-image file="student_lab_ms.png"/>
+    <resources>
+      <css file="../css/New_lab_activity.css"/>
+      <css file="../css/New_student.css"/>
+      <css file="../css/student_ms.css"/>
+    </resources>
+    <parameters>
+      <parameter name="css.processor.type" value="prince"/>
+      <parameter name="figure.title.placement" value="bottom"/>
+      <parameter name="args.figurelink.style" value="NUMBER"/>
+      <parameter name="args.tablelink.style" value="NUMBER"/>
+    </parameters>
+    <xslt>
+      <extension file="../xslt/student.xsl" id="com.oxygenxml.pdf.css.xsl.merged2merged"/>
+    </xslt>
+  </pdf>
+  
+</publishing-template>
