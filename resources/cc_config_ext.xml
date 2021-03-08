@@ -423,6 +423,8 @@
 	
 	<elementProposals path="topic" insertElements="title body"/>
 	
+	<elementProposals path="lcOpenQuestion2" insertElements="lcQuestion2 lcOpenAnswer2"/>
+	
 	<match elementName="fig" attributeName="outputclass">
 		<items action="append">
 			<item value="float-right"/>
