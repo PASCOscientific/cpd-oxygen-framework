@@ -296,7 +296,8 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
     margin-top: 3pt;
 }
 
-*[class ~= 'learning2-d/lcOpenAnswer2'] {
+*[class ~= 'learning2-d/lcOpenAnswer2'],
+*[class ~= 'learning2-d/lcOpenAnswer2'] * {
     font: 300 9pt 'Roboto', sans-serif;
 }
 
