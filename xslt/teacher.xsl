@@ -7,4 +7,7 @@
     <!-- Remove elements with @props = 'student' -->
     <xsl:template match="*[contains(@props, 'student')]"/>
     
+    <!-- Remove Procedure topics that do not contain questions -->
+    <xsl:template match="*[@oid='procedure']//*[contains(@class, ' topic/topic ')][not(.//*[contains(@class, ' learningInteractionBase2-d/lcInteractionBase2 ')])]"/>
+    
 </xsl:stylesheet>
