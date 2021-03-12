@@ -28,7 +28,8 @@
    display: inline-block;
 }
 *[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) div,
-*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure {
+*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure,
+*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) p {
    display: block;
 }
 
