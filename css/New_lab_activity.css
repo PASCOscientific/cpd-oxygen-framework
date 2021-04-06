@@ -303,6 +303,19 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 }
 
 
+/****************************************************************/
+/*                      NOTES                                   */
+/****************************************************************/
+
+*[class ~="topic/note"] {
+    font-style: italic;
+    background-color: lightgray;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+span.note__title {
+    text-transform: uppercase;
+}
 
 
 
