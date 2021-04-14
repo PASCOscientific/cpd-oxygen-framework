@@ -1,0 +1,15 @@
+/* 
+ * Bold, italic, underline, subscript, superscript, code.phrase and links
+ */
+*[class ~= "topic/div"]:-oxy-selection-inside {
+    -oxy-floating-toolbar: 
+        oxy_button(actionID, 'bold') oxy_button(actionID, 'italic') oxy_button(actionID, 'underline')
+        '|'
+         oxy_button(actionID, 'subscript') oxy_button(actionID, 'superscript') oxy_button(actionID, 'insert.code.phrase')
+          '|'
+        oxy_buttonGroup(
+         icon, "${framework(DITA)}/img/link.png",
+         label, '${i18n(Link)}',
+         actionIDs, 'insert.cross.reference, insert.file.reference, insert.url.reference'
+        )
+}
