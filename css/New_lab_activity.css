@@ -210,7 +210,6 @@ ol ol li:before {
 }
 *[class~="topic/entry"], [class~="topic/stentry"] {
     border: 1px solid black;
-    text-align: center;
     height: 0.33in;    
 }
 
