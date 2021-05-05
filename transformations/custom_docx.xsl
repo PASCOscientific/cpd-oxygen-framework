@@ -44,6 +44,11 @@
     <!-- Do not display draft-comment. This needs to be fixed using args.draft = no in the future. -->
     <xsl:template match="*[contains(@class, ' topic/draft-comment ')]" priority="10"/>
     
+    <!-- Note element style -->
+    <xsl:template match="*[contains(@class, ' topic/note ')]/*" mode="block-style">
+        <w:pStyle w:val="Note"/>
+    </xsl:template>
+    
     <!-- ******************************************************************************************** -->
     <!--                              STYLES FROM ORIGINAL STUDENT LAB TOPIC                          -->
     <!-- ******************************************************************************************** -->
