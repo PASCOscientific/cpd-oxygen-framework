@@ -4,7 +4,8 @@
 }
 
 /* Remove blank graphs */
-[class~="topic/fig"] [class~="topic/image"][outputclass ~= 'blank'] {
+[class~="topic/fig"] [class~="topic/image"][outputclass ~= 'blank'],
+[class~="topic/image"][placement="break"][outputclass ~= 'blank'] {
     display: none;
 }
 

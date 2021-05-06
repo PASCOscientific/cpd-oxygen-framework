@@ -271,6 +271,10 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
   margin: 0.25in auto;
   height: initial;
 }
+[class~="topic/image"][placement="break"] {
+    height: initial;
+}
+
 [class ~= "topic/fig"][outputclass ~= "float-right"] {
     float: right;
     margin: 0.25in;
