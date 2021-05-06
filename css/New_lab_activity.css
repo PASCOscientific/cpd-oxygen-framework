@@ -308,7 +308,7 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 
 *[class ~="topic/note"] {
     font-style: italic;
-    background-color: lightgray;
+    background-color: #D9D9D9;
     padding: 0.5em;
     border-radius: 5px;
 }
@@ -316,7 +316,12 @@ span.note__title {
     text-transform: uppercase;
 }
 
-
+/* Remove default note icon */
+div.note {
+    background-image: none;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
 
 
 
