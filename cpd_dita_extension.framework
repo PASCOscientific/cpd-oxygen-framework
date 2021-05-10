@@ -196,7 +196,7 @@
 															<Integer>7</Integer>
 														</field>
 														<field name="uri">
-															<String>file:/C:/Users/jhanna/Documents/_Curriculum_Projects/Analysis-of-Aspirin-Tablets/cpd-oxygen-framework/resources/lc-topic.sch</String>
+															<String>${framework(CPD DITA Extension)}/resources/lc-topic.sch</String>
 														</field>
 													</validationUnitSchema>
 												</field>
