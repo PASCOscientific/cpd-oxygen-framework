@@ -49,6 +49,19 @@
         <w:pStyle w:val="Note"/>
     </xsl:template>
     
+    <!-- Set figure title at the bottom of the figure -->
+    <xsl:template match="*[contains(@class, ' topic/fig ')]" name="fig" priority="10">
+        <xsl:if test="empty(*[contains(@class, ' topic/title ')])">
+            <xsl:call-template name="start-bookmark"/>
+        </xsl:if>
+        <xsl:apply-templates select="*[not(self::title)]"/>
+        <xsl:apply-templates select="title"/>
+        <xsl:if test="empty(*[contains(@class, ' topic/title ')])">
+            <xsl:call-template name="end-bookmark"/>
+        </xsl:if>
+    </xsl:template>
+    
+    
     <!-- ******************************************************************************************** -->
     <!--                              STYLES FROM ORIGINAL STUDENT LAB TOPIC                          -->
     <!-- ******************************************************************************************** -->
