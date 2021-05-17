@@ -153,7 +153,7 @@ div[class ~= "front-page/front-page-title"] {
     color: black;
 }
 
-sup {
+sup[class~="hi-d/sup"] {
     font-size: 0.6em;
     top: -0.5em;
     bottom: 0.33em;
