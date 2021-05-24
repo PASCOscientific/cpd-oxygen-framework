@@ -153,10 +153,9 @@ div[class ~= "front-page/front-page-title"] {
     color: black;
 }
 
-sup[class~="hi-d/sup"] {
+sup[class~="hi-d/sup"],
+sub[class~="hi-d/sub"] {
     font-size: 0.6em;
-/*    top: -0.5em;
-    bottom: 0.33em;*/
 }
 
 /****************************************************************/
