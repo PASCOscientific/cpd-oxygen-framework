@@ -290,6 +290,9 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 	font-family: serif !important;
 	font-size: 10pt;
 }
+*[class ~="equation-d/equation-block"] {
+    overflow: auto;
+}
 
 /****************************************************************/
 /*                      QUESTIONS AND ANSWERS                   */
