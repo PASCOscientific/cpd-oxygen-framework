@@ -99,7 +99,7 @@ div[class ~= "front-page/front-page-title"] {
 /****************************************************************/
 
 *{
-    margin-top: 0;
+    margin-top: 6pt;
     margin-bottom: 6pt;
 }
 
@@ -118,10 +118,15 @@ div[class ~= "front-page/front-page-title"] {
     font: 500 italic 10pt 'Roboto', sans-serif;
     page-break-after: avoid;
 }
+.topictitle1,
+.topictitle2 {
+    margin-top: 12pt;
+}
 .figcap,
 .tablecap {
     font: italic 9pt serif;
     text-align: left;
+    margin-top: 0;
 }
 
 *[class~='topic/p'] {
@@ -246,8 +251,9 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 
 *[class ~= "topic/image"] {
     prince-image-resolution: auto;
-    height: 1.5em;
-    vertical-align: middle
+    height: 1em;
+    margin: 0;
+    vertical-align: text-bottom;
 }
 
 /* Center-align figures */
@@ -297,6 +303,11 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 /****************************************************************/
 /*                      QUESTIONS AND ANSWERS                   */
 /****************************************************************/
+
+*[class ~= 'learning2-d/lcOpenQuestion2'],
+*[class ~= 'learning2-d/lcQuestion2'] {
+    margin-top: 0pt;
+}
 
 *[class ~= 'learning2-d/lcOpenAnswer2'] {
     margin-top: 3pt;
