@@ -55,6 +55,7 @@
 /* Time Required Section */
 *[oid ~= 'time-requirements'] *[class ~= 'dt'] {
     float: left;
+    margin-top: 0;
 }
 *[oid ~= 'time-requirements'] *[class ~= 'dt']:after {
     content: ": ";
