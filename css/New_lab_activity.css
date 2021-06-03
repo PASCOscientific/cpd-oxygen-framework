@@ -156,6 +156,7 @@ div[class ~= "front-page/front-page-title"] {
 *[class~="topic/xref"] {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
 }
 
 sup[class~="hi-d/sup"],
