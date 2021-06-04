@@ -217,6 +217,15 @@ ol ol li:before {
     border: 1px solid black;
     height: 0.33in;    
 }
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
 
 /* Unset vertical-align:top for this rule */
 .simpletable td:not([valign]), .table td:not([valign]) {
