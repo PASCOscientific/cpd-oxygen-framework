@@ -90,7 +90,8 @@ div[class ~= "front-page/front-page-title"] {
 
 /* Page Break Rules */
 [oid="objectives"],
-[oid="materials"] {
+[oid="materials"],
+[oid="safety"] {
     page-break-inside: avoid;
 }
 
