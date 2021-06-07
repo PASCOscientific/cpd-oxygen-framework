@@ -276,6 +276,9 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
     border-width: 0 0 1px 0;
     vertical-align: bottom;
 }
+.single-value caption {
+    margin: 0;
+}
 
 /****************************************************************/
 /*                      IMAGES AND FIGURES                      */
@@ -312,7 +315,8 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
     height: initial;
 }
 
-[class ~= "topic/fig"][outputclass ~= "float-right"] {
+[class ~= "topic/fig"][outputclass ~= "float-right"],
+.float-right {
     float: right;
     margin: 0.25in;
     margin-right: 0in;
