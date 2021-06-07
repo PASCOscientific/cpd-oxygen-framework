@@ -88,6 +88,9 @@
 .table td:not([valign]) {
     vertical-align: top;
 }
+.single-value td {
+    vertical-align: bottom !important;
+}
 
 
 

@@ -128,6 +128,9 @@ div[class ~= "front-page/front-page-title"] {
     text-align: left;
     margin-top: 0;
 }
+.tablecap {
+    margin-bottom: 3pt;
+}
 
 *[class~='topic/p'] {
     font-size: 10pt;
@@ -253,6 +256,24 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 .table--title:before {
   content: "Table " counter(tablecounter) ". ";
   counter-increment: tablecounter;
+}
+
+/* Fill-in-the-blank type tables */
+.single-value {
+    border: 1px;
+}
+.single-value td:first-child:after {
+    content: " =";
+    white-space: pre;
+}
+.single-value td:first-child {
+    text-align: right;
+    border: none;
+    vertical-align: bottom;
+}
+.single-value td:last-child {
+    border-width: 0 0 1px 0;
+    vertical-align: bottom;
 }
 
 /****************************************************************/
