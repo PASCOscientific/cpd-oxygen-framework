@@ -272,6 +272,7 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
     vertical-align: bottom;
 }
 .single-value td:last-child {
+    text-align: center;
     border-width: 0 0 1px 0;
     vertical-align: bottom;
 }
