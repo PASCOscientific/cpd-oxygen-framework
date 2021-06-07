@@ -456,6 +456,13 @@
 			<item value="teacher"/>
 		</items>
 	</match>
+	
+	<match elementName="table" attributeName="outputclass">
+		<items action="append">
+			<item value="single-value"/>
+			<item value="float-right"/>
+		</items>
+	</match>
 		
 	<!--
 	This is a more complex example, inspired from Lightweight DITA. 
