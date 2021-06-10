@@ -10,26 +10,26 @@
 }
 
 /* Remove all list items in Procedure except ones containing questions */
-*[oid ~= 'procedure'] [class~="topic/li"],
-*[oid ~= 'procedure'] [class~="topic/li"] .note {
+*[oid |= 'procedure'] [class~="topic/li"],
+*[oid |= 'procedure'] [class~="topic/li"] .note {
     font-size: 0pt;
     margin-top: 0;
     margin-bottom: 0;
 }
 /* Remove all images from list items in Procedure except ones containing questions */
-*[oid ~= 'procedure'] [class~="topic/li"] .imagecenter,
-*[oid ~= 'procedure'] [class~="topic/li"] figure {
+*[oid |= 'procedure'] [class~="topic/li"] .imagecenter,
+*[oid |= 'procedure'] [class~="topic/li"] figure {
     display: none;
 }
 /* Reverse the above two rules for list items containing questions */
 /* NOTE: The :has selector is NOT supported in browsers but is supported in Prince */
-*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) {
+*[oid |= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) {
     font-size: 10pt;
     margin-top: 6pt;
     margin-bottom: 6pt;
 }
-*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) .imagecenter,
-*[oid ~= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure {
+*[oid |= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) .imagecenter,
+*[oid |= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure {
     display: block;
 }
 
