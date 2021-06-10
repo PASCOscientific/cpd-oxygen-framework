@@ -438,6 +438,7 @@
 			<item value="three-lines"/>
 			<item value="four-lines"/>
 			<item value="drawing"/>
+			<item value="no-space"/>
 		</items>
 	</match>
 	

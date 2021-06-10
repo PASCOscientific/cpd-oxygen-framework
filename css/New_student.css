@@ -8,6 +8,9 @@
     padding-bottom: 1in;
 }
 
+*[outputclass~="no-space"] {
+    padding-bottom: 0in !important;
+}
 *[outputclass~="one-line"] {
     padding-bottom: 0.33in !important;
 }
