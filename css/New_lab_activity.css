@@ -192,16 +192,16 @@ sub[class~="hi-d/sub"] {
 ol {
   counter-reset: item;
 }
-ol li {
+ol > li {
   display: block;
 }
-ol li:before {
+ol > li:before {
   content: counter(item) ". ";
   counter-increment: item;
   position: absolute;
   margin-left: -1.5em;
 }
-ol ol li:before {
+ol ol > li:before {
   content: counter(item, lower-alpha) ". ";
 }
 
