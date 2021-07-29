@@ -112,6 +112,9 @@ div[class ~= "front-page/front-page-title"] {
     font: 300 20pt 'Roboto', sans-serif;
     text-transform: uppercase;
 }
+.lowercase {
+    text-transform: none;
+}
 .topictitle2 {
     font: 500 13pt 'Roboto', sans-serif;
 }
