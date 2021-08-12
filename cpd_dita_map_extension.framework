@@ -755,6 +755,29 @@
 													<list>
 														<ditaParameter>
 															<field name="name">
+																<String>document.flat.xsl</String>
+															</field>
+															<field name="description">
+																<null/>
+															</field>
+															<field name="value">
+																<String>${frameworkDir}/transformations/document.flat.xsl</String>
+															</field>
+															<field name="defaultValue">
+																<null/>
+															</field>
+															<field name="type">
+																<Integer>2</Integer>
+															</field>
+															<field name="possibleValues">
+																<null/>
+															</field>
+															<field name="possibleValuesDescriptions">
+																<null/>
+															</field>
+														</ditaParameter>
+														<ditaParameter>
+															<field name="name">
 																<String>document.xsl</String>
 															</field>
 															<field name="description">
