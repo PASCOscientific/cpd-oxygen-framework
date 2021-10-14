@@ -13,3 +13,7 @@
          actionIDs, 'insert.cross.reference, insert.file.reference, insert.url.reference'
         )
 }
+
+*[class~='learning2-d/lcInstructornote2']:before {
+    content: url('../img/instructor_note.png') " Instructor Note: ";
+}
