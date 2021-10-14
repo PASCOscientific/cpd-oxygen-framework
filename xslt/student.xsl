@@ -10,4 +10,7 @@
     <!-- Remove elements with @props = 'teacher' -->
     <xsl:template match="*[contains(@props, 'teacher')]"/>
     
+    <!-- Remove lcInstructorNote2 elements -->
+    <xsl:template match="*[contains(@class, ' learning2-d/lcInstructornote2 ')]"/>
+    
 </xsl:stylesheet>
