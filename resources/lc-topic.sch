@@ -10,4 +10,46 @@
                 document output. Use less than 60 characters.</sch:report>
         </sch:rule>
     </sch:pattern>
+    <sch:pattern>
+        <sch:rule context="mathml">
+            <sch:assert test="parent::equation-block or parent::equation-inline" role="error">
+                The &lt;mathml&gt; element must be nested inside an &lt;equation-block&gt; or &lt;equation-inline&gt; element.
+            </sch:assert>
+        </sch:rule>
+    </sch:pattern>
+    <sch:pattern>
+        <sch:rule context="*[contains(@class, ' topic/dl ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/div ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/fig ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/lines ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/lq ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/note ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/ol ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/simpletable ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/sl ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/table ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+        <sch:rule context="*[contains(@class, ' topic/ul ')]">
+            <sch:report test="parent::p" role="warn">Don't nest a block element inside of a &lt;p&gt; element.</sch:report>
+        </sch:rule>
+    </sch:pattern>
 </sch:schema>
