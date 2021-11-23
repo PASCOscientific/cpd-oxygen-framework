@@ -10,4 +10,11 @@
                 document output. Use less than 60 characters.</sch:report>
         </sch:rule>
     </sch:pattern>
+    <sch:pattern>
+        <sch:rule context="mathml">
+            <sch:assert test="parent::equation-block or parent::equation-inline" role="error">
+                The &lt;mathml&gt; element must be nested inside an &lt;equation-block&gt; or &lt;equation-inline&gt; element.
+            </sch:assert>
+        </sch:rule>
+    </sch:pattern>
 </sch:schema>
