@@ -380,8 +380,14 @@ div.note {
     padding-right: 0.75em;
     overflow: auto;
 }
-
-
+/* Text for instructor notes */
+div.lcInstructornote2 > span.note__title {
+    display: none;
+}
+div.lcInstructornote2::before {
+    content: "INSTRUCTOR NOTE: ";
+    font-weight: bold;
+}
 
 
 
