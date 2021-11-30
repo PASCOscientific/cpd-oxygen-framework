@@ -207,6 +207,9 @@ ol > li:before {
 ol ol > li:before {
   content: counter(item, lower-alpha) ". ";
 }
+dl {
+    font-size: 10pt;
+}
 
 /****************************************************************/
 /*                      TABLES                                  */
