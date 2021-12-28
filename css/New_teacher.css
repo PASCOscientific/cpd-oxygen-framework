@@ -10,12 +10,16 @@
 }
 
 /* Remove all list items in Procedure, Prototype, and Test topics except ones containing questions */
+/* Also remove margins and text from any block elements */
 *[oid |= 'procedure'] [class~="topic/li"],
 *[oid |= 'procedure'] [class~="topic/li"] .note,
+*[oid |= 'procedure'] [class~="topic/li"] ol,
 *[oid |= 'prototype'] [class~="topic/li"],
 *[oid |= 'prototype'] [class~="topic/li"] .note,
+*[oid |= 'prototype'] [class~="topic/li"] ol,
 *[oid |= 'test'] [class~="topic/li"],
-*[oid |= 'test'] [class~="topic/li"] .note
+*[oid |= 'test'] [class~="topic/li"] .note,
+*[oid |= 'test'] [class~="topic/li"] ol
 {
     font-size: 0pt;
     margin-top: 0;
