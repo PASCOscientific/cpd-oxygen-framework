@@ -9,7 +9,7 @@
     display: none;
 }
 
-/* Remove all list items in Procedure, Prototype, and Test topics except ones containing questions */
+/* Remove all list items in Procedure, Prototype, and Test, and Research topics except ones containing questions */
 /* Also remove margins and text from any block elements */
 *[oid |= 'procedure'] [class~="topic/li"],
 *[oid |= 'procedure'] [class~="topic/li"] .note,
@@ -19,26 +19,33 @@
 *[oid |= 'prototype'] [class~="topic/li"] ol,
 *[oid |= 'test'] [class~="topic/li"],
 *[oid |= 'test'] [class~="topic/li"] .note,
-*[oid |= 'test'] [class~="topic/li"] ol
+*[oid |= 'test'] [class~="topic/li"] ol,
+*[oid |= 'research'] [class~="topic/li"],
+*[oid |= 'research'] [class~="topic/li"] .note,
+*[oid |= 'research'] [class~="topic/li"] ol
 {
     font-size: 0pt;
     margin-top: 0;
     margin-bottom: 0;
 }
-/* Remove all images from list items in Procedure, Prototype, and Test topics except ones containing questions */
+/* Remove all images from list items in Procedure, Prototype, and Test, and Research topics except ones containing questions */
 *[oid |= 'procedure'] [class~="topic/li"] .imagecenter,
 *[oid |= 'procedure'] [class~="topic/li"] figure,
 *[oid |= 'prototype'] [class~="topic/li"] .imagecenter,
 *[oid |= 'prototype'] [class~="topic/li"] figure,
 *[oid |= 'test'] [class~="topic/li"] .imagecenter,
-*[oid |= 'test'] [class~="topic/li"] figure {
+*[oid |= 'test'] [class~="topic/li"] figure,
+*[oid |= 'research'] [class~="topic/li"] .imagecenter,
+*[oid |= 'research'] [class~="topic/li"] figure
+{
     display: none;
 }
 /* Reverse the above two rules for list items containing questions */
 /* NOTE: The :has selector is NOT supported in browsers but is supported in Prince */
 *[oid |= 'procedure'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]),
 *[oid |= 'prototype'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]),
-*[oid |= 'test'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) {
+*[oid |= 'test'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]),
+*[oid |= 'research'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]){
     font-size: 10pt;
     margin-top: 6pt;
     margin-bottom: 6pt;
@@ -48,7 +55,9 @@
 *[oid |= 'prototype'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) .imagecenter,
 *[oid |= 'prototype'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure,
 *[oid |= 'test'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) .imagecenter,
-*[oid |= 'test'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure {
+*[oid |= 'test'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure,
+*[oid |= 'research'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) .imagecenter,
+*[oid |= 'research'] [class~="topic/li"]:has([class~="learningInteractionBase2-d/lcInteractionBase2"]) figure {
     display: block;
 }
 
