@@ -317,7 +317,7 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 }
 
 /* Center images in figures */
-*[class ~= "topic/fig"] *[class ~= "topic/image"]{
+*[class ~= "topic/fig"] > *[class ~= "topic/image"]{
   display: block;
   margin: 0.25in auto;
   height: initial;
