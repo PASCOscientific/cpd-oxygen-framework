@@ -404,6 +404,9 @@ div.lcInstructornote2::before {
     font-weight: bold;
 }
 
+p.small {
+    font: 300 8pt 'Roboto', sans-serif;
+}
 
 
 
