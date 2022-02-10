@@ -189,7 +189,7 @@ span.no-break {
 .li {
     page-break-inside: avoid;
 }
-[oid="materials"] .ul {
+[oid=materials] > div > .ul {
     column-count: 2;
 }
 .ol .ol,
