@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
     <xt:extension id="com.pasco.cpd-framework">
         <xt:location href="https://github.com/PASCOscientific/cpd-oxygen-framework/archive/master.zip"/>
-        <xt:version>1.1.10</xt:version>
+        <xt:version>1.1.11</xt:version>
         <xt:oxy_version>23.0+</xt:oxy_version>
         <xt:type>framework</xt:type>
         <xt:author>Jonathan Hanna</xt:author>
