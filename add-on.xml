@@ -10,26 +10,7 @@
         <xt:type>framework</xt:type>
         <xt:author>Jonathan Hanna</xt:author>
         <xt:name>CPD Framework</xt:name>
-        <xt:description xmlns="http://www.w3.org/1999/xhtml">
-            <html>
-                <head>
-                    <title>CPD Oxygen Framework</title>
-                </head>
-                <body>
-                    <p>Framework for creating PASCO curriculum documents in Oxygen XML Editor.</p>
-                    <h2>What's new in version 1.1.1</h2>
-                    <p>Added the following Schematron rules:</p>
-                    <ul>
-                        <li>MathML blocks must be nested in an equation-block or equation-inline element.</li>
-                        <li>Don't nest block elements in paragraph elements.</li>
-                    </ul>
-                    <h2>What's new in version 1.1.0</h2>
-                    <ul>
-                        <li>Added styles for engineering activities.</li>
-                    </ul>
-                </body>
-            </html>
-        </xt:description>
+        <xt:description xmlns="http://www.w3.org/1999/xhtml"/>
         <xt:license>
             <![CDATA[
 Copyright 2021 PASCO scientific. For use only by PASCO scientific employees, contractors, or Global Science Education Partners.
