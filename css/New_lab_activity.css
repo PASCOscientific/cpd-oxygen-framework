@@ -179,6 +179,10 @@ span.no-break {
     white-space: nowrap;
 }
 
+.skinny {
+    line-height: 0.6em;
+}
+
 /****************************************************************/
 /*                      LISTS                                   */
 /****************************************************************/
@@ -298,6 +302,16 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 /* Removes white space above table when there is no table title*/
 .no-title {
     margin-top: -0.2in;
+}
+
+.short {
+    height: 0.1in;
+}
+
+/* Gray out a table cell */
+*[class~="gray-out"],
+*[class~="topic/stentry"] {
+    background-color: #d3d3d3;
 }
 
 /****************************************************************/
