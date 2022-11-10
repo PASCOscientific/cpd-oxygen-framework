@@ -393,6 +393,10 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
     font-size: 10pt;
 }
 
+/* Left-align answers that use MathType within an equation block*/
+.math-ans{
+    text-align: left;
+}
 
 /****************************************************************/
 /*                      NOTES                                   */
