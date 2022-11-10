@@ -301,7 +301,7 @@ th[class~="topic/entry"], th[class~="topic/stentry"] {
 
 /* Removes white space above table when there is no table title*/
 .no-title {
-    margin-top: -0.2in;
+    margin-top: -0.16in;
 }
 
 .short {
