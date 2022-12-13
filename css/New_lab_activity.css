@@ -179,12 +179,14 @@ span.no-break {
     white-space: nowrap;
 }
 
+/* useful to reduce height to minimum when only 1 line */
 .skinny {
     line-height: 0.6em;
 }
 
-.zerotoppad {
-    margin-top: 0px;
+/* minimum height between lines when multiple lines of content */
+.skinny-multi {
+    line-height: 1.1em;
 }
 
 /****************************************************************/
